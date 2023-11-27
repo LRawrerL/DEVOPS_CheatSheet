@@ -128,7 +128,8 @@ print(a)
 import mymodule
 
 # Define test case to be used
-def test():
+# test_ is a keyword
+def test_mymodule():
 	result = []
 	input = "This is a test"
 	result = mymodule.isString(input)
