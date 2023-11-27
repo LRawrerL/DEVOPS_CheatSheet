@@ -134,3 +134,70 @@ def test():
 	result = mymodule.isString(input)
 	assert (result == 1)
 ```
+
+### Dictionaries all in 1
+- Used to represent data in a key value pair
+- Data type not a **DATABASE** 
+- No duplicates
+- Ordered
+- Changeable 
+```python
+mydict = {"name" : "yixuan", "age" : 18}
+# example of a dictionary
+print(len(mydict))
+# 1 as 0, 1
+```
+
+- Accessing Items in a dictionary
+```python
+mydict = {"name" : "yixuan", "age" : 18}
+print(mydict["name"])
+print(mydict.get("name"))
+# yixuan
+```
+
+- Iterating through a dictionary ways
+```python
+mydict = {"name" : "yixuan", "age" : 18}
+# returning values
+for key in mydict:
+  print(mydict[key])
+# yixuan , 18
+
+# returning keys
+for key in mydict:
+  print(key)
+# name, age
+```
+
+- Iterating through a list with dictionaries 
+```python
+myList = [
+	{
+		'foo':12,
+		'bar':14
+	},
+	{
+		'foo':52,
+		'bar':641
+	},
+	{
+		'foo':6,
+		'bar':84
+	}
+]
+
+for dictionary in myList:
+	print(dictionary['foo'])
+# basically loops through the list, at each index there is a dictionary. The second line will take the 'foo' key and print out its value 
+
+for dictionary in myList:
+	for key in dictionary:
+      		print(key)
+# Prints out each key 
+
+for dictionary in myList:
+	for key in dictionary:
+      		print(dictionary[key])
+# Prints out each value
+```
